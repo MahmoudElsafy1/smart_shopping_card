@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "423827434955",
+    "project_id": "smart-shopping-cart-4817a",
+    "storage_bucket": "smart-shopping-cart-4817a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423827434955:android:5ecd08e9d11dd120795a4e",
+        "android_client_info": {
+          "package_name": "com.example.userapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423827434955-djusunjejq94bfrbon69e5r8vmp81cnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQGBzwoeLdH-MGz3eEmmYf3DpSJ7PQydk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423827434955-djusunjejq94bfrbon69e5r8vmp81cnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,167 @@
+import 'package:adminpanel/screens/generateqr_screen.dart';
+import 'package:adminpanel/screens/manageProduct.dart';
+import 'package:flutter/material.dart';
+
+import 'addProduct.dart';
+
+class AdminHome extends StatelessWidget {
+  static String id = 'AdminHome';
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+
+        body: Center(
+
+            child: Container(
+             constraints: BoxConstraints.expand(),
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image:AssetImage('assats/images/background.jpg'),
+                      fit: BoxFit.cover)
+              ),
+
+              child:Column(
+
+                mainAxisAlignment: MainAxisAlignment.start,
+
+                children: [
+
+                  SizedBox(height: 40,),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment:MainAxisAlignment.center,
+                    textBaseline: TextBaseline.alphabetic,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+                              onTap:(){
+                                Navigator.pushNamed(context, AddProduct.id);
+                              },
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+                                padding: EdgeInsets.all(30),
+                                child: Text("AddProduct",style:TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold)),
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          Colors.green.withOpacity(.9),
+                                          Colors.green
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+                                    borderRadius: BorderRadius.circular(15)
+                                ),
+
+
+                              )
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 30,),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+                              onTap: (){
+                                Navigator.pushNamed(context, ManageProducts.id);
+                              },
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+                                padding: EdgeInsets.all(35),
+                                child: Text("update item",style:TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold)),
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          Colors.yellowAccent.withOpacity(.9),
+                                          Colors.yellowAccent
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+
+                                    borderRadius: BorderRadius.circular(15)
+                                ),
+
+
+                              )
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 40,),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment:MainAxisAlignment.center,
+                    textBaseline: TextBaseline.alphabetic,
+                    children: [
+
+
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+
+                              onTap: (){
+                                Navigator.pushNamed(context, GenerateQRPage.id);
+                              },
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+                                padding: EdgeInsets.all(35),
+
+                                child: Text("generate qr",style:TextStyle(color: Colors.black,fontSize: 15,)),
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          Colors.white.withOpacity(.9),
+                                          Colors.white
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+                                    borderRadius: BorderRadius.circular(15)
+                                ),
+
+
+                              )
+                          ),
+                        ),
+                      ), SizedBox(width: 30,),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+                              onTap: (){},
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+
+                                padding: EdgeInsets.all(35),
+                                child: Text("remove item",style:TextStyle(color: Colors.black,fontSize: 15,)),
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          Colors.purpleAccent.withOpacity(.9),
+                                          Colors.purple
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+                                    borderRadius: BorderRadius.circular(15)
+                                ),
+
+
+                              )
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
+        )
+    );}}

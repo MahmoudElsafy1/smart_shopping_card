@@ -1,0 +1,91 @@
+Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+                              onTap:(){
+                                Navigator.pushNamed(context, AddProduct.id);
+                              },
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+                                padding: EdgeInsets.all(30),
+                                child: Text("AddProduct",style:TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold)),
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          Colors.green.withOpacity(.9),
+                                          Colors.green
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+                                    borderRadius: BorderRadius.circular(15)
+                                ),
+
+
+                              )
+                          ),
+                        ),
+
+
+
+
+
+
+
+
+Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+
+                              onTap: (){
+                                Navigator.pushNamed(context, GenerateQRPage.id);
+                              },
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+                                padding: EdgeInsets.all(35),
+
+                                child: Text("generate qr",style:TextStyle(color: Colors.black,fontSize: 15,)),
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          Colors.white.withOpacity(.9),
+                                          Colors.white
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+                                    borderRadius: BorderRadius.circular(15)
+                                ),
+
+
+                              )
+                          ),
+                        ),
+
+
+ Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+                              onTap: (){
+                                Navigator.pushNamed(context, ManageProducts.id);
+                              },
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+                                padding: EdgeInsets.all(35),
+                                child: Text("update item",style:TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold)),
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          Colors.yellowAccent.withOpacity(.9),
+                                          Colors.yellowAccent
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+
+                                    borderRadius: BorderRadius.circular(15)
+                                ),
+
+
+                              )
+                          ),
+                        ),
